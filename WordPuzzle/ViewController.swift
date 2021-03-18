@@ -74,6 +74,8 @@ class ViewController: UIViewController {
             
         let buttonView = UIView()
         buttonView.translatesAutoresizingMaskIntoConstraints = false
+        buttonView.layer.borderWidth = 1
+        buttonView.layer.borderColor = UIColor.lightGray.cgColor
         view.addSubview(buttonView)
         
         
@@ -154,12 +156,18 @@ class ViewController: UIViewController {
                 answersLabel.text = splitAnswer?.joined(separator: "\n")
                 currentAnswer.text = ""
                 score += 1
-                
-            if score % 7 == 0{
+            
+            if score % 7 == 0 {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+        } else {
+            let ac = UIAlertController(title: "Oopss !!", message: "Answer is wrong, Try again !!", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(ac, animated: true)
+            score -= 1
+            currentAnswer.text = ""
         }
          
     }
@@ -223,7 +231,7 @@ class ViewController: UIViewController {
     func levelUp(action: UIAlertAction) {
         
         level += 1
-        solutions.removeAll()
+        solutions.removeAll(keepingCapacity: true)
         
         loadLevel()
         
