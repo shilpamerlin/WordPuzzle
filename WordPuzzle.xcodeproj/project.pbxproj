@@ -13,6 +13,8 @@
 		8D1EA65925F2B15A00E64D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EA65725F2B15A00E64D09 /* Main.storyboard */; };
 		8D1EA65B25F2B15D00E64D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EA65A25F2B15D00E64D09 /* Assets.xcassets */; };
 		8D1EA65E25F2B15D00E64D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EA65C25F2B15D00E64D09 /* LaunchScreen.storyboard */; };
+		8D1EA66725F5300800E64D09 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D1EA66625F5300700E64D09 /* level1.txt */; };
+		8D254FF92603E189008A6802 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D254FF82603E189008A6802 /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8D1EA65A25F2B15D00E64D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1EA65D25F2B15D00E64D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1EA65F25F2B15D00E64D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1EA66625F5300700E64D09 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		8D254FF82603E189008A6802 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		8D1EA65025F2B15A00E64D09 /* WordPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				8D254FF82603E189008A6802 /* level2.txt */,
+				8D1EA66625F5300700E64D09 /* level1.txt */,
 				8D1EA65125F2B15A00E64D09 /* AppDelegate.swift */,
 				8D1EA65325F2B15A00E64D09 /* SceneDelegate.swift */,
 				8D1EA65525F2B15A00E64D09 /* ViewController.swift */,
@@ -124,7 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D254FF92603E189008A6802 /* level2.txt in Resources */,
 				8D1EA65E25F2B15D00E64D09 /* LaunchScreen.storyboard in Resources */,
+				8D1EA66725F5300800E64D09 /* level1.txt in Resources */,
 				8D1EA65B25F2B15D00E64D09 /* Assets.xcassets in Resources */,
 				8D1EA65925F2B15A00E64D09 /* Main.storyboard in Resources */,
 			);
